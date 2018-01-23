@@ -3679,6 +3679,7 @@ html .btn--buy-ticket:hover {
     border-bottom: 1px solid #ececec;
     margin: 0 0 40px;
     font: 300 18px Roboto-Light;
+	font-weight: bold;
 }
 .b-form--place .b-form__row {
     padding: 0 25px;
