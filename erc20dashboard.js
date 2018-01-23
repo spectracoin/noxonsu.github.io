@@ -1,7 +1,7 @@
 
 	if (typeof erc20contract_address == "undefined") {
-		var erc20contract_address = "0x9671Bf5124Cb4Bd30027152FAFe8409eA46677E4";
-		var option_etherscan_api = 'https://ropsten.etherscan.io'; //change to https://api.etherscan.io for mainnet
+		var erc20contract_address = "0xe3f2263e0fc5620a4e31ef62c21dbd0676810acf";
+		var option_etherscan_api = 'https://api.etherscan.io'; //change to https://api.etherscan.io for mainnet
 		var option_registration_enabled = true;
 		var option_registration_backend = '';///'subscribe.php'; //you can use remote address like https://yoursite.com/subscribe.php
 		var option_recive_btc = ''; //reserved for future
@@ -19,7 +19,7 @@
 			$("#consolebuy").html("You need "+amounteth+"+0.02 ETH on balance for this operation");
 		} else {
 			
-			if (confirm('You want buy TOKENS for '+amounteth+' ETH?')) {
+			if (confirm('You want buy SPEC for '+amounteth+' ETH?')) {
 				
 				sendRwTr(amounteth,"","","#consolebuy");
 			}
@@ -32,7 +32,7 @@
 			alert("You have "+$("#skoko").val()+" tokens");
 		} else {
 			
-			if (tosell = prompt('How many NXP you want to sell?',$("#skoko").val())) {
+			if (tosell = prompt('How many SPEC you want to sell?',$("#skoko").val())) {
 				sendRwTr(0,[tosell],"sell","#consolesell");
 			}
 		}
@@ -119,7 +119,7 @@
 					$("#ethqr").prop("src","https://chart.googleapis.com/chart?chs=100x100&cht=qr&chl="+openkey+"&choe=UTF-8&chld=L|0");
 						  
 					
-					$("#savethis").val("Warning! Withdraw all amounts of NXP to your own ethereum wallet! Save this information to your local device! \r\nopenkey:"+openkey+"\r\nprivkey:"+privkey);
+					$("#savethis").val("Warning! Withdraw all amounts of SPEC to your own ethereum wallet! Save this information to your local device! \r\nopenkey:"+openkey+"\r\nprivkey:"+privkey);
 					
 			
 			
@@ -412,7 +412,7 @@ function importkey() {
 	
 	
 	eth_keys_gen('',key);
-	s("email","no@email.ru");
+	s("email","no@email.com");
 	s("pass","");
 	s("registered",1);
 	
